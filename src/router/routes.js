@@ -2,7 +2,13 @@
 const routes = [
   {
     path: '/',
-    component: () => import('pages/IndexPage.vue'),
+    component: () => import('layouts/GuestLayout.vue'),
+    children: [
+      {
+        path: '',
+        component: () => import('pages/GuestPage.vue')
+      }
+    ]
 
 
   },
