@@ -1,8 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
-      <p>Здесь будет Header</p>
-    </q-header>
+    <headerNav/>
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -11,13 +9,14 @@
 
 <script>
 import { defineComponent } from "vue";
+import headerNav from "src/components/global-components/header-nav.vue";
 export default defineComponent({
   name: "MainLayout",
-  components: {},
+  components: {headerNav},
 
   data() {
     return {
-      
+
     };
   },
 });
