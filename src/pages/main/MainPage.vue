@@ -2,12 +2,13 @@
   <q-page>
     <div class="header q-mb-xl"></div>
     <div class="newsContent">
-      <div class="newText full-width row  justify-between  content-start q-mb-xl">
+      <div class="newText full-width row justify-between content-start q-mb-xl">
         <h1>ПОСЛЕДНИЕ НОВОСТИ</h1>
         <h2>ПЕРЕЙТИ НА СТРАНИЦУ С НОВОСТИЯМИ →</h2>
       </div>
       <newsBlock></newsBlock>
     </div>
+    <footerNav />
   </q-page>
 </template>
 
@@ -15,6 +16,7 @@
 <script>
 import { defineComponent } from "vue";
 import newsBlock from "src/components/global-components/news.vue";
+import footerNav from "src/components/global-components/footer-nav.vue";
 export default defineComponent({
   name: "MainPage",
   data() {
@@ -22,6 +24,7 @@ export default defineComponent({
   },
   components: {
     newsBlock,
+    footerNav,
   },
   methods: {},
   mounted() {},
@@ -44,7 +47,7 @@ export default defineComponent({
     font-size: 50px;
     line-height: 61px;
     color: #ff4655;
-    margin:0;
+    margin: 0;
   }
 
   h2 {

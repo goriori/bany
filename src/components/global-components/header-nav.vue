@@ -1,6 +1,6 @@
 <template>
   <q-header class="flex bg-dark">
-    <div class="logo q-mr-xl flex items-center">LOGO</div>
+    <div class="logo q-mr-xl flex items-center"><logoMain /></div>
     <div class="navigations">
       <nav class="row">
         <router-link
@@ -9,7 +9,7 @@
           :to="nav.linkTo"
           class="q-mr-xl column"
         >
-            <a>{{ nav.title }}</a>
+          <a>{{ nav.title }}</a>
         </router-link>
       </nav>
     </div>
@@ -18,6 +18,7 @@
 
 <script>
 import { defineComponent } from "vue";
+import logoMain from "./logo-main.vue";
 export default defineComponent({
   name: "HeaderNav",
   data() {
@@ -42,16 +43,21 @@ export default defineComponent({
       ],
     };
   },
+  components: { logoMain },
 });
 </script>
 
 
 <style lang="scss" scoped>
-nav{
+.logo {
+  padding-left: 130px;
+}
+nav {
   height: 100%;
   padding-top: 41px;
 }
 .q-header {
+  width: 100%;
   height: 100px;
 }
 a {
@@ -71,11 +77,11 @@ a:after {
   background: #ff4655;
   border-radius: 10px;
   transition: 0.25s;
-  margin:0 auto;
+  margin: 0 auto;
   margin-top: 24px;
 }
 
-a:hover::after{
+a:hover::after {
   width: 100%;
   transition: 0.25s;
 }
