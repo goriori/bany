@@ -18,7 +18,7 @@ export default defineComponent({
       postSetting:{
         date:"14.01.21",
         type:"НОВОСТИ",
-        title:"BUNYHOPE - СПИСОК ИЗМЕНЕНИЯ ОШИБОК"
+        title:"BUNNYHOPE - СПИСОК ИЗМЕНЕНИЯ ОШИБОК"
       }
     };
   },
@@ -37,7 +37,7 @@ export default defineComponent({
   }
 
   h2 {
-    font-family: "Inter";
+
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -46,7 +46,7 @@ export default defineComponent({
   }
 
   h1 {
-    font-family: "Inter";
+
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -55,7 +55,7 @@ export default defineComponent({
   }
 
   p {
-    font-family: "Inter";
+    
     font-style: normal;
     font-weight: 700;
     font-size: 24px;

@@ -5,15 +5,24 @@
         Прыгай, не останавливайся и побеждай
       </p>
       <h4 class="logo q-ma-none q-mt-md animate__animated animate__fadeInDown">
-        BunyHope
+        BunnyHope
       </h4>
-      <buttonComponent
-        title="Играй бесплатно"
-        class="q-mt-xl animate__animated animate__pulse"
-      />
+      <router-link to="main">
+        <buttonComponent
+          title="Играй бесплатно"
+          class="q-mt-xl animate__animated animate__pulse"
+        />
+      </router-link>
     </div>
-    <characterImage class="animate__animated animate__flash cursor-pointer "  v-if="contentVisibility === false" @click="viewContent" />
-    <previewVideo class="animate__animated animate__fadeInDown" v-if="contentVisibility === true" />
+    <characterImage
+      class="animate__animated animate__flash cursor-pointer"
+      v-if="contentVisibility === false"
+      @click="viewContent"
+    />
+    <previewVideo
+      class="animate__animated animate__fadeInDown"
+      v-if="contentVisibility === true"
+    />
   </q-page>
 </template>
 
@@ -25,18 +34,17 @@ import characterImage from "src/components/guest-page/images/character-image.vue
 import previewVideo from "src/components/guest-page/viedos/preview-video.vue";
 export default defineComponent({
   name: "GuestPage",
-  data(){
+  data() {
     return {
-      contentVisibility:false
-    }
+      contentVisibility: false,
+    };
   },
   components: { buttonComponent, characterImage, previewVideo },
-  methods:{
-    viewContent(){
-      this.contentVisibility = true
-      
-    }
-  }
+  methods: {
+    viewContent() {
+      this.contentVisibility = true;
+    },
+  },
 });
 </script>
 
