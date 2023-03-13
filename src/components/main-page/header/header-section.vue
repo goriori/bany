@@ -1,11 +1,23 @@
 <template>
-  <div class="flex flex-center header-section text-white animate__animated animate__fadeInDown">
-    <div class="information  q-mr-xl">
-      <p class="flex flex-center text-h5" >Прыгай, не останавливайся и побеждай</p>
-      <p class="flex flex-center text-h1 text-weight-bolder q-mt-md" >BunnyHope</p>
-      <buttonVue title="Скачать" class="q-mt-xl"  />
+  <div
+    class="flex flex-center header-section text-white animate__animated animate__fadeInDown"
+  >
+    <div class="information q-mr-xl animate__animated animate__fadeInDown">
+      <p class="flex flex-center text-h5">
+        Прыгай, не останавливайся и побеждай
+      </p>
+      <p class="flex flex-center text-h1 text-weight-bolder q-mt-md">
+        BunnyHope
+      </p>
+      <div class="flex flex-center">
+        <buttonVue title="Скачать" class="q-mt-xl" />
+      </div>
     </div>
-    <characterImage width="371px" height="439px" />
+    <characterImage
+      width="371px"
+      height="439px"
+      class="animate__animated animate__flash"
+    />
   </div>
 </template>
 
@@ -27,7 +39,6 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .header-section {
-
   background-image: url("../../../assets/MainPage/backgroundMain.png");
   background-size: cover;
   background-repeat: no-repeat;

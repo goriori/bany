@@ -1,5 +1,5 @@
 <template>
-  <q-header class="flex bg-dark animate__animated animate__fadeInDown ">
+  <q-header class="flex bg-dark animate__animated animate__fadeInDown">
     <div class="logo q-mr-xl flex items-center"><logoMain /></div>
     <div class="navigations">
       <nav class="row">
