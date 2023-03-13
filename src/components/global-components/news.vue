@@ -3,9 +3,9 @@
     <div class="image-new"></div>
     <div class="row">
       <h1 class="q-mt-md">{{ postSetting.date }}</h1>
-      <h2 class="q-mt-md">{{ postSetting.type }}</h2>
+      <h2 class="q-mt-md q-ml-md">{{ postSetting.type }}</h2>
     </div>
-    <p class="q-mt-md">{{ postSetting.title }}</p>
+    <p class="q-mt-sm">{{ postSetting.title }}</p>
   </div>
 </template>
 

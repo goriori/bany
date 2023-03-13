@@ -1,10 +1,15 @@
 <template>
-  <q-header class="flex bg-dark items-center">
-    <div class="logo q-mr-xl">LOGO</div>
+  <q-header class="flex bg-dark">
+    <div class="logo q-mr-xl flex items-center">LOGO</div>
     <div class="navigations">
-      <nav>
-        <router-link v-for="nav in nav_settings" :key="nav" :to="nav.linkTo" class="q-mr-xl">
-          <a>{{ nav.title }}</a>
+      <nav class="row">
+        <router-link
+          v-for="nav in nav_settings"
+          :key="nav"
+          :to="nav.linkTo"
+          class="q-mr-xl column"
+        >
+            <a>{{ nav.title }}</a>
         </router-link>
       </nav>
     </div>
@@ -42,6 +47,10 @@ export default defineComponent({
 
 
 <style lang="scss" scoped>
+nav{
+  height: 100%;
+  padding-top: 41px;
+}
 .q-header {
   height: 100px;
 }
@@ -51,14 +60,23 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
-
   color: #ffffff;
-
   transition: 0.3s;
 }
 
-a:hover {
+a:after {
+  content: "";
+  width: 0%;
+  height: 5px;
+  background: #ff4655;
+  border-radius: 10px;
+  transition: 0.25s;
+  margin:0 auto;
+  margin-top: 24px;
+}
 
-  color: #b9b5f5;
+a:hover::after{
+  width: 100%;
+  transition: 0.25s;
 }
 </style>
