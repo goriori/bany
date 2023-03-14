@@ -27,7 +27,7 @@ export default defineComponent({
       nav_settings: [
         {
           title: "ОБ ИГРЕ",
-          linkTo: "about",
+          linkTo: "/main",
         },
         {
           title: "НОВОСТИ",
