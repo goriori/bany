@@ -35,9 +35,9 @@ button {
   font-weight: 700;
   line-height: 15px;
 
-  -webkit-box-shadow: 21px 21px 5px 10px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 21px 21px 5px 10px rgba(0, 0, 0, 0.75);
-  box-shadow: 15px 10px 5px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 21px 21px 5px 10px rgba(15, 25, 35, 1);
+  -moz-box-shadow: 21px 21px 5px 10px rgba(15, 25, 35, 1);
+  box-shadow: 0px 0px 10px 1px rgba(15, 25, 35, 1);
 
   cursor: pointer;
   transition: 0.2s;
@@ -45,7 +45,7 @@ button {
 
 button:hover{
   width: 100%;
-  box-shadow: 19px 15px 10px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 19px 15px 1px 1px rgba(15, 25, 35, 1);
   transition: 0.3s;
 
 }

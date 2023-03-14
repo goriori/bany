@@ -12,7 +12,7 @@
     </div>
     <div class="gameProcessContent">
       <p>ИГРОВОЙ ПРОЦЕСС</p>
-      <div class="gameProcessAbout q-mt-xl row justify-between justify-between">
+      <div class="gameProcessAbout q-mt-xl row  justify-between">
         <div class="q-ml-lg">
           <p>ПРЕОДОЛЕВАЙ ВСЕ ГРАНИЦЫ</p>
           <h1 class="q-mt-lg">
@@ -29,7 +29,7 @@
         </div>
         <div class="gameProcessVideo">
           <div>
-            <div class="videoTitle row justify-center">
+            <div class="videoTitle row ">
               <h1>ИГРОВОЙ ПРОЦЕСС</h1>
             </div>
           </div>
@@ -147,7 +147,7 @@ export default defineComponent({
         left: -15px;
         top: 50px;
         h1 {
-          font-family: "Inter";
+
           font-style: normal;
           font-weight: 700;
           font-size: 12px;

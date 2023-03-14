@@ -1,5 +1,5 @@
 <template>
-  <button class="text-white cursor-pointer">Политика конфиденциальности</button>
+  <button class="text-white cursor-pointer">Условия использования</button>
 </template>
 
 
@@ -16,7 +16,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 button {
-  max-width: 241px;
+  max-width: 415px;
   height: 43px;
   width: 100%;
   border: none;

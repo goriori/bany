@@ -31,11 +31,11 @@ export default defineComponent({
         },
         {
           title: "НОВОСТИ",
-          linkTo: "about",
+          linkTo: "/main/news",
         },
         {
           title: "ПОДДЕРЖКА",
-          linkTo: "about",
+          linkTo: "/main/support",
         },
         {
           title: "СОЦИАЛЬНЫЕ СЕТИ",
@@ -53,14 +53,17 @@ export default defineComponent({
 .logo {
   padding-left: 130px;
 }
+
 nav {
   height: 100%;
   padding-top: 41px;
 }
+
 .q-header {
   width: 100%;
   height: 100px;
 }
+
 a {
   text-decoration: none;
   font-style: normal;
@@ -69,21 +72,20 @@ a {
   line-height: 19px;
   color: #ffffff;
   transition: 0.3s;
-}
+  &:after {
+    content: "";
+    width: 0%;
+    height: 5px;
+    background: #ff4655;
+    border-radius: 10px;
+    transition: 0.25s;
+    margin: 0 auto;
+    margin-top: 24px;
+  }
 
-a:after {
-  content: "";
-  width: 0%;
-  height: 5px;
-  background: #ff4655;
-  border-radius: 10px;
-  transition: 0.25s;
-  margin: 0 auto;
-  margin-top: 24px;
-}
-
-a:hover::after {
-  width: 100%;
-  transition: 0.25s;
+  &:hover::after {
+    width: 100%;
+    transition: 0.25s;
+  }
 }
 </style>

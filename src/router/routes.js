@@ -19,7 +19,15 @@ const routes = [
       {
         path:'',
         component:()=> import('pages/main/MainPage.vue')
-      }
+      },
+      {
+        path:'news',
+        component:()=> import('pages/news/NewsPage.vue')
+      },
+      {
+        path:'support',
+        component:()=> import('pages/support/SupportPage.vue')
+      },
     ]
   },
   // Always leave this as last one,

@@ -12,6 +12,7 @@
       <div class="sponsors flex flex-center q-mt-xl">
         <logoMain class="q-mr-xl" />
         <characterImage width="97px" height="116px" class="q-ml-xm" />
+        <mveuImageVue class="q-ml-xl" />
       </div>
       <div class="aboutInformation flex justify-evenly q-mt-xl">
         <policyButton />
@@ -39,6 +40,8 @@ import logoMain from "./logo-main.vue";
 import characterImage from "../guest-page/images/character-image.vue";
 import policyButton from "../ui/buttons/policy-button.vue";
 import termsButton from "../ui/buttons/terms-button.vue";
+import mveuImageVue from "../main-page/images/sponsors/mveu-image.vue";
+
 export default defineComponent({
   name: "FooterNav",
   data() {
@@ -53,6 +56,7 @@ export default defineComponent({
     characterImage,
     policyButton,
     termsButton,
+    mveuImageVue,
   },
 });
 </script>
