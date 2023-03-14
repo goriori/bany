@@ -42,7 +42,6 @@ export default defineComponent({
   background-image: url("../../../assets/MainPage/backgroundMain.png");
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 1920px;
   width: 100%;
   height: 795px;
 }
